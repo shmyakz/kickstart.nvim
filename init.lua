@@ -119,9 +119,6 @@ vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
 end)
 
-	vim.opt.clipboard = "unnamedplus"
-end)
-
 -- Set tab size
 vim.opt.tabstop = 4
 
@@ -227,7 +224,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function()
     vim.highlight.on_yank()
   end,
-
+})
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 
